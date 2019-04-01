@@ -1,6 +1,5 @@
 exports.handler = function(evt, context, cb) {
-  console.log(evt.body);
-  console.log("context", context);
+  console.log(JSON.parse(evt.body).payload);
 
   cb(null, {
     statusCode: 200,
