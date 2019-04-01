@@ -17,33 +17,33 @@
 </template>
 
 <script>
-  export default {
-    name: "form-notification",
-    props: {
-      status: {
-        type: Object
-      },
-    },
-    methods: {
-      removeNotification () {
-        clearTimeout(this.countdown)
-        this.$emit('remove-notification')
-      }
-    },
-    computed: {
-      iconClass () {
-        switch(this.status.code) {
-          case 'success':
-             return 'fa-check'
-          case 'error':
-            return 'fa-exclamation'
-        }
-      }
-    },
-    mounted () {
-      //this.countdown = setTimeout(this.removeNotification, 3000)
+export default {
+  name: "form-notification",
+  props: {
+    status: {
+      type: Object
     }
+  },
+  methods: {
+    removeNotification() {
+      clearTimeout(this.countdown);
+      this.$emit("remove-notification");
+    }
+  },
+  computed: {
+    iconClass() {
+      switch (this.status.code) {
+        case "success":
+          return "fa-check";
+        case "error":
+          return "fa-exclamation";
+      }
+    }
+  },
+  mounted() {
+    //this.countdown = setTimeout(this.removeNotification, 3000)
   }
+};
 </script>
 
 <style scoped lang="scss">
@@ -85,11 +85,10 @@
 }
 
 .fa-exclamation {
-  color: #E74E50;
+  color: #e74e50;
 }
 
 button {
   border: none;
 }
 </style>
-

@@ -8,10 +8,9 @@
 </template>
 
 <script>
-  export default {
-    name: "SubmissionFail"
-  }
+export default {
+  name: "SubmissionFail"
+};
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>

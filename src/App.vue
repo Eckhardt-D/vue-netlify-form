@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import QuestionForm from './components/QuestionForm.vue';
+import QuestionForm from "./components/QuestionForm.vue";
 
 export default {
   name: "app",
